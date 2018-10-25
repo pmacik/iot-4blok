@@ -1,6 +1,7 @@
 package io.openshift.booster.service;
 
 import java.util.List;
+import java.util.Date;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
