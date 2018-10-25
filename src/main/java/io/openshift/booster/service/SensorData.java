@@ -1,7 +1,12 @@
 package io.openshift.booster.service;
 
-public class SensorData {
+import java.util.LinkedList;
+import java.util.List;
 
+public class SensorData {
+    
+   static final List<SensorData> STORAGE = new LinkedList<>();
+    
    private String sensorName = "DHT11";
 
    private int temperature = -1;
