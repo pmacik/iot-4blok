@@ -6,6 +6,7 @@ import java.util.List;
 public class SensorData {
     
    static final List<SensorData> STORAGE = new LinkedList<>();
+   private String id = null;
     
    private String sensorName = "DHT11";
 
@@ -48,6 +49,14 @@ public class SensorData {
    public void setTimestamp(String timestamp) {
       this.timestamp = timestamp;
    }
+   
+   public String getId() {
+      return this.id;
+   }
+
+   public void setId(String id) {
+      this.id = id;
+   }
 
    // Fluent API
 
@@ -85,5 +94,14 @@ public class SensorData {
 
    public String timestamp() {
       return getTimestamp();
+   }
+   
+   public SensorData id(String id){
+       setId(id);
+       return this;
+   }
+   
+   public String id(){
+       return getId();
    }
 }
